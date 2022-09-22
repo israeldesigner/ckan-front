@@ -228,7 +228,17 @@ export const script = () => {
                     help:'Ajuda',
                     talk: 'Fale conosco',
                     faq:'Dúvidas frequentes',
-                  }
+                  },
+                  content:{
+                    banner: `
+                    O portal
+                    <b class="font-weight-bold text-orange">
+                    Dados abertos Fortaleza</b> disponibiliza
+                    informações sobre as mais diversas áreas da cidade, em formatos abertos, para estimular a inovação,
+                    o empreendedorismo e a geração de negócios em Fortaleza.
+                    `,
+                    search:"Pesquisar"
+                  },
                 }
               },
               en: {
@@ -263,7 +273,20 @@ export const script = () => {
                     help:'Help',
                     talk: 'Talk with us',
                     faq:'Frequently questions',
-                  }
+                  },
+                  content:{
+                    banner: `
+                    Fortaleza’s <b class="font-weight-bold text-orange">Open Data portal</b> provides raw data about diverse areas of the city. 
+                    The objectives are to stimulate the generation of innovation, 
+                    entrepreneurship and business in the city of Fortaleza.
+                    O portal
+                    <b class="font-weight-bold text-orange">
+                    Dados abertos Fortaleza</b> disponibiliza
+                    informações sobre as mais diversas áreas da cidade, em formatos abertos, para estimular a inovação,
+                    o empreendedorismo e a geração de negócios em Fortaleza.
+                    `,
+                    search:"Pesquisar"
+                  },
                 }
               },
               es: {
