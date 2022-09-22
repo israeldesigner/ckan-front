@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!--[if IE 9]> 
+<html lang="pt_BR" class="ie9">
+   <![endif]-->
+   <!--[if gt IE 8]><!--> 
+   <html lang="pt_BR">
+      <!--<![endif]-->
+      <head>
+         <meta charset="utf-8" />
+         <meta name="keywords" content="Digital, Fortaleza, Prefeitura de Fortaleza, ckan, Dados abertos , open Knowledge,
+            Metadados, Tecnologia" />
+         <meta name="rights" content="Todos os direitos reservados a Prefeitura de Fortaleza - CITINOVA" />
+         <meta name="author" content="Citinova - Prefeitura de Fortaleza" />
+         <meta name="description" content="O Portal de Dados Abertos  da Prefeitura de Fortaleza
+            é o sítio eletrônico de referência para a busca e o acesso aos dados públicos, seus metadados,
+            informações, aplicativos e serviços relacionados." />
+         <meta property="og:title" content="Dados Abertos - Prefeitura de Fortaleza" />
+         <meta property="og:description" content="
+            O Portal de Dados Abertos  da Prefeitura de Fortaleza
+            é o sítio eletrônico de referência para a busca e o acesso aos dados públicos, seus metadados,
+            informações, aplicativos e serviços relacionados.
+            " />
+         <meta property="og:type" content="video.movie" />
+         <meta property="og:url"  content="O Portal de Dados Abertos  da Prefeitura de Fortaleza
+            é o sítio eletrônico de referência para a busca e o acesso aos dados públicos, seus metadados" />
+         <meta property="og:image" content="/base/assets/images/icon-citinova.png" />
+         <meta name="generator" content="ckan 2.9.2" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Bem vindo - Fortaleza Dados Abertos</title>
+         <style>
+            .header-section .primary-menu .main-area .main-menu ul li ul li.menu-item-has-children a::after{
+            right: -5px;
+            }
+         </style>
+      </head>
+      <body data-site-root="https://dados.fortaleza.ce.gov.br/" data-locale-root="https://dados.fortaleza.ce.gov.br/" >
+         <div id="loader-wrapper">
+            <img src="/base/assets/images/icon-citinova.png" class="logo-svg" alt="icone load">
+            <div id="loader">
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+         </div>
+         <div class="hide sr-only sr-only-focusable"><a href="#content">Pular para o conteúdo</a></div>
+         <header class="account-masthead">
+            <div class="container">
+            </div>
+         </header>
+         <!-- pesquisa  -->
+         <div class="search-area">
+            <div class="container">
+               <div class="search-input">
+                  <div class="search-close">
+                     <i class="icofont-close-squared-alt"></i>
+                  </div>
+                  <form role="search" action="/dataset/" method="get">
+                     <input type="text" name="text" class="form-control" placeholder="Pesquisar dados" name="q" placeholder="Pesquisar">
+                     <button class="search-btn" type="submit">
+                     <span class="serch-icon">
+                     <i class="icon-magnifier icons"></i>
+                     </span>
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <!-- pesquisa  -->
+         <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+               <div class="vw-plugin-top-wrapper"></div>
+            </div>
+         </div>
+         <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+         <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+         </script>
+         <style>
+            .app-acessibilidade ul li a, .app-acessibilidade .app-acessibilidadeMenu a{
+            font-size: smaller;
+            color: #151b1e;
+            }
+         </style>
+         <!-- Mobile menu -->
+         <div class="mobile-menu crypto-bg ">
+            <nav class="mobile-header d-flex justify-content-between">
+               <div class="header-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+               <div class="header-logo">
+                  <a href="/" data-toggle="tooltip" class="linkLogo-principal" title="dados abertos">
+                  <img src="/base/assets/images/logo-dadosBgYellow.png" alt="dados abertos" width="170">
+                  </a>
+               </div>
+               <div class="search">
+                  <i class="icon-magnifier icons text-white"></i>
+               </div>
+            </nav>
+            <nav class="mobile-menu">
+               <div class="mobile-menu-area">
+                  <div class="mobile-menu-area-inner">
+                     <a href="/" rel="">
+                     <img src="/base/assets/images/logo.png" alt="logo prefeitura de fortaleza" width="130">
+                     </a>
+                     <ul>
+                        <li>
+                           <a class="active" href="/">Início</a>
+                        </li>
+                        <li>
+                           <a href="/about">Sobre</a>
+                        </li>
+                        <li>
+                           <a href="/dataset/">Conjunto de dados</a>
+                        </li>
+                        <li>
+                           <a href="/group/" onclick="window.location='/group/'" data-toggle="tooltip">Grupos</a>
+                           <ul>
+                              <li><a href="/dataset/?groups=cultura">Cultura</a></li>
+                              <li><a href="/group/">Ver todos</a></li>
+                              <li><a href="/dataset/?groups=demografia">Demografia</a></li>
+                              <li><a href="/group/">Ver todos</a></li>
+                              <li><a href="/dataset/?groups=economia">Economia</a></li>
+                              <li><a href="/group/">Ver todos</a></li>
+                              <li><a href="/dataset/?groups=educacao">Educação</a></li>
+                              <li><a href="/group/">Ver todos</a></li>
+                              <li><a href="/dataset/?groups=esportes">Esportes</a></li>
+                              <li><a href="/group/">Ver todos</a></li>
+                              <li><a href="/dataset/?groups=planejamentoegestao">Gestão Pública</a></li>
+                              <li><a href="/group/">Ver todos</a></li>
+                              <li><a href="/dataset/?groups=habitacao">Habitação</a></li>
+                              <li><a href="/group/">Ver todos</a></li>
+                              <li><a href="/dataset/?groups=meioambiente">Meio ambiente e Urbanismo</a></li>
+                              <li><a href="/group/">Ver todos</a></li>
+                              <li><a href="/dataset/?groups=saude">Saúde</a></li>
+                              <li><a href="/group/">Ver todos</a></li>
+                              <li><a href="/dataset/?groups=seguranca">Segurança</a></li>
+                              <li><a href="/group/">Ver todos</a></li>
+                              <li><a href="/dataset/?groups=transporte">Transporte</a></li>
+                              <li><a href="/group/">Ver todos</a></li>
+                              <li><a href="/dataset/?groups=turismo">Turismo</a></li>
+                              <li><a href="/group/">Ver todos</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="/organization/">Organizações</a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="tooltip">Ajuda</a>
+                           <ul>
+                              <li><a href="/contato">Fale conosco</a></li>
+                              <li><a href="/faq">Dúvidas frequentes</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+         <!-- Mobile Menu -->
+         <section class="app-menu d-none d-lg-block">
+            <!--acessibilidade-->
+            <section class="s-acessibility">
+              <div class="s-acessibility__utils">
+                  <ul class="s-acessibility__utils--anchors">
+                      <li><a href="#"  id="anchorMain"   data-toggle="tooltip" data-placement="top" title="atalho alt + 1" data-i18n="[data-original-title]acess.centralAtalho;acess.central" accesskey="1" role="button"></a></li>
+                      <li><a href="#search"  id="anchorSearch" data-toggle="tooltip" data-placement="top" title="atalho alt + 3" data-i18n="[data-original-title]acess.menuAtalho;acess.search" accesskey="3" role="button"> </a></li>
+                      <li><a href="#"  id="anchorHeader" data-toggle="tooltip" data-placement="top" title="atalho alt + 2" data-i18n="[data-original-title]acess.menuAtalho;acess.menu" accesskey="2" role="button"></a></li>
+                      <li><a href="#"  id="anchorFooter" data-toggle="tooltip" data-placement="top" title="atalho alt + 4" data-i18n="[data-original-title]acess.rodapeAtalho;acess.rodape" accesskey="4" role="button"></a></li>
+                  </ul>
+                  <ul class="s-acessibility__utils--functions">
+                      <li>
+                          <a href="#" id="altocontraste" class="" onclick="window.toggleContrast()" role="button">
+                              <i class="fa fa-adjust"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#" id="decrease-font"  title="Diminuir Texto" role="button">A-</a>
+                      </li>
+                      <li>
+                          <a href="#" id="normal-font"  title="Texto tamanho padrão" role="button">A</a>
+                      </li>
+                      <li>
+                          <a href="#" id="increase-font"  title="Aumentar Texto" role="button">A+</a>
+                      </li>
+                  </ul>
+                  <div class="flex justify-items-end align-items-center langButton">
+                    <!-- exemplo tradução -->
+                    <button class="lang-button btnPor" type="button">
+                        <img src="br.svg" alt="br" class="">
+                    </button>
+                    <button class="lang-button btnEng" type="button">
+                        <img src="gb.svg" alt="ing" class="">
+                    </button>
+                    <button class="lang-button btnEsp" type="button">
+                        <img src="es.svg" alt="es" class="">
+                    </button>
+                    <!-- exemplo tradução-->
+                  </div>          
+              </div>
+              <div class="s-acessibility__links">
+                  <ul class="s-acessibility__links--external">
+                      <li>
+                          <a href="https://acessoainformacao.fortaleza.ce.gov.br/" target="_blank" rel="noopener noreferrer">Acesso a informação</a>
+                      </li>
+                      <li>
+                          <a href="https://transparencia.fortaleza.ce.gov.br/" target="_blank" rel="noopener noreferrer">Transparência</a>
+                      </li>
+                      <li>
+                          <a href="https://catalogodeservicos.fortaleza.ce.gov.br/" target="_blank" rel="noopener noreferrer">Serviços</a>
+                      </li>
+                      <li>
+                          <a href="http://legislacao.fortaleza.ce.gov.br/index.php/P%C3%A1gina_principal" target="_blank" rel="noopener noreferrer">Legislação</a>
+                      </li>
+                  </ul>
+              </div>
+            </section>
+          <!--acessibilidade-->
+         </section>
+         <!-- menu desktop -->
+         <header id="header"class="header-section crypto bg-main">
+            <div class="header-area">
+               <div class="container">
+                  <div class="primary-menu">
+                     <div class="logo align-items-center">
+                        <a href="https://www.fortaleza.ce.gov.br/" data-toggle="tooltip" class="linkPmf-nav" target="_blank" title="Prefeitura de Fortaleza">
+                        <img src="/base/assets/images/logo.png" alt="logo prefeitura de fortaleza" width="185">
+                        </a>
+                        <a href="/" data-toggle="tooltip" class="linkLogo-principal" title="dados abertos">
+                        <img src="/base/assets/images/logo-dadosBgYellow.png" alt="dados abertos" width="185">
+                        </a>
+                     </div>
+                     <nav id="navMenu" class="main-area">
+                        <div class="main-menu">
+                           <ul>
+                              <li>
+                                 <a class="active" href="/">Início</a>
+                              </li>
+                              <li>
+                                 <a href="/about">Sobre </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Conjuntos de dados
+                                 </a>
+                                 <ul>
+                                    <li><a href="/dataset/">Todos</a></li>
+                                    <li class="subMenuGrupos">
+                                       <a href="#" data-toggle="tooltip">Grupos</a>
+                                       <ul>
+                                          <li><a href="/dataset/?groups=cultura">Cultura</a></li>
+                                          <li><a href="/dataset/?groups=demografia">Demografia</a></li>
+                                          <li><a href="/dataset/?groups=economia">Economia</a></li>
+                                          <li><a href="/dataset/?groups=educacao">Educação</a></li>
+                                          <li><a href="/dataset/?groups=esportes">Esportes</a></li>
+                                          <li><a href="/dataset/?groups=planejamentoegestao">Gestão Pública</a></li>
+                                          <li><a href="/dataset/?groups=habitacao">Habitação</a></li>
+                                          <li><a href="/dataset/?groups=meioambiente">Meio ambiente e Urbanismo</a></li>
+                                          <li><a href="/dataset/?groups=saude">Saúde</a></li>
+                                          <li><a href="/dataset/?groups=seguranca">Segurança</a></li>
+                                          <li><a href="/dataset/?groups=transporte">Transporte</a></li>
+                                          <li><a href="/dataset/?groups=turismo">Turismo</a></li>
+                                          <li>
+                                             <a href="/group/" onclick="window.location='/group/'">
+                                             Todos
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="/organization/">Organizações</a>
+                              </li>
+                              <li>
+                                 <a href="#" data-toggle="tooltip">Ajuda</a>
+                                 <ul>
+                                    <li><a href="/contato">Fale conosco</a></li>
+                                    <li><a href="/faq">Dúvidas frequentes</a></li>
+                                    <li><a href="/manuais">Manuais e vídeos</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                        <div style="border-right: 1px solid #000; width: 3px; height: 28px;"></div>
+                        <div class="header-right d-flex justify-content-end">
+                           <div class="search mr-3" style="margin-left: 10px;cursor: pointer;">
+                              <i class="fa fa-search" aria-hidden="true"></i>
+                           </div>
+                           <!--<div style="cursor: pointer;" data-toggle="modal" data-target="#cadastroLogin" >
+                              <i class="icon-user icons font-2xl"></i>
+                              </div>-->
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- Menu desktop -->
+         <div class="home-custom homepage teste layout-1">
+            <!-- Banner  -->
+            <section class="banner-section style-6 crypto crypto-bg teste2">
+               <!--imagem de fundo-->
+               <!-- <div class="round-one d-none d-lg-block">
+                  <a href="./index.html" rel="">
+                      <img src="/base/assets/images/contato-desenho.jpg" alt="logo dados-abertos">
+                  </a>
+                  </div> -->
+               <!--/imagem de 	-->
+               <div class="banner-area">
+                  <div class="container">
+                     <div class="row no-gutters align-items-center">
+                        <div class="col-lg-6 col-12">
+                           <div class="content-part" id="search">
+                              <div class="section-header style-2">
+                                 <a href="./" rel="" class="">
+                                 <img src="/base/assets/images/logo-dadosAbertos.png" alt="logo dados-abertos" width="" class="mb-4 img-fluid">
+                                 </a>
+                                 <!-- <h3 class="text-black" style="font-size: xxx-large;  padding-left:8px">Explore dados</h3> -->
+                                 <form action="/dataset/" method="get" style="font-size: xxx-large;  padding-left:8px">
+                                    <input placeholder="Explorar Dados" type="text"  name="q" />
+                                    <button class="btn btn-orange" type="submit">
+                                    <i class="icon-magnifier icons text-white d-md-none"></i>
+                                    <span class="d-none d-md-block">Pesquisar</span>
+                                    </button>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                           <div class="section-wrapper">
+                              <div class="banner-thumb text-right">
+                                 <p class="text-black mb-2 lead">O portal
+                                    <b class="font-weight-bold text-orange">
+                                    Dados abertos Fortaleza</b> disponibiliza
+                                    informações sobre as mais diversas áreas da cidade, em formatos abertos, para estimular a inovação,
+                                    o empreendedorismo e a geração de negócios em Fortaleza.
+                                 </p>
+                                 <div class="block-infoInitial mt-4">
+                                    <a href="/dataset/" title="dataset search">
+                                       <div class="cardInit-banner d-flex justify-content-center align-items-center">
+                                          <div class="text-black font-weight-bold text-center mr-3">
+                                             <b><i class="fa fa-database mr-2" aria-hidden="true"></i> 105</b><br>
+                                             Conjunto de dados
+                                          </div>
+                                       </div>
+                                    </a>
+                                    <a href="/group/" title="group">
+                                       <div class="cardInit-banner d-flex justify-content-center align-items-center">
+                                          <div class="text-black font-weight-bold text-center">
+                                             <b><i class="fa fa-lightbulb-o" aria-hidden="true"></i> 12</b><br>
+                                             Grupos
+                                          </div>
+                                       </div>
+                                    </a>
+                                    <a href="/organization/" title="oraganização">
+                                       <div class="cardInit-banner d-flex justify-content-center align-items-center">
+                                          <div class="text-black font-weight-bold text-center">
+                                             <b><i class="fa fa-handshake-o" aria-hidden="true"></i> 12</b><br>
+                                             Organizações
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!--/ Banner  -->
+            <section class="s-gruposIcons mt-4 p-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 mb-4 mt-4">
+                    <h2 class="text-orange">Grupos</h2>
+                  </div>
+                </div>
+                 <div class="row" id="iconListas">
+                    <div class="col-12" id="msgShow">
+                      <p>Carregando...</p>
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-12 col-lg-3"></div>
+                    <div class="col-12 col-lg-9 text-right pr-5">
+                      <small class="mr-3" style="font-style: italic;font-size: x-small;/* margin-right: 20px; */">*O total de conjunto de dados pode não se igualar à soma dos totais de conjuntos de dados por grupo pois um conjunto de dados pode estar em mais de um grupo.</small>
+                    </div>
+                  </div>
+              </div>
+            </section>
+            <!-- dados-->
+            <div class="service-sponsor">
+              <!-- Service Section Style 2 Start Here -->
+              <section class="service-section bg-service style-7 crypto-bg">
+                  <div class="container">
+                      <div class="section-header">
+                          <h2 class="text-orange">Últimas atualizações</h2>
+                      </div>
+                      <div class="section-wrapper" style="margin: 0px !important;">
+                          <div class="container">
+                              <div class="container">
+                                  <div class="lab-content tableLastUpdate">
+                                      <table class="table table-responsive-sm table-striped">
+                                        <thead class="">
+                                          <tr>
+                                              <th>Título</th>
+                                              <th>Data da modificação</th>
+                                              <th>Organização</th>
+                                              <th>Formatos dados </th>
+                                          </tr>
+                                        </thead>
+                                        <tbody id="dataBody" class="dataBody">
+                                        </tbody>
+                                    </table>
+                                  </div>
+                                  <a href="/dataset?q=" class="btn btn-orange right">Consultar todos</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              <!-- Service Section Style 2 Ending Here -->
+            </div>
+            <!--/dados-->
+            
+            <!--seção outros portais-->
+            <div class="service-sponsor my-5">
+               <section class="service-section style-7 crypto-bg">
+                  <div class="container">
+                     <div class="section-header">
+                        <h2 class="text-orange">Outros portais de dados</h2>
+                     </div>
+                     <div class="section-wrapper">
+                        <div class="lab-item-2">
+                           <a target="_blank" data-toggle="tooltip" href="https://digital.fortaleza.ce.gov.br/" class="text-blue floatRight mt-2">
+                              <div class="lab-inner">
+                                 <div class="lab-thumb">
+                                    <img src="/base/assets/images/logomarca.jpg" alt="Fortaleza digital">
+                                 </div>
+                                 <div class="lab-content">
+                                    <p>Portal de serviços digitais da Prefeitura de Fortaleza.</p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="lab-item-2">
+                           <a target="_blank" data-toggle="tooltip" href="https://transparencia.fortaleza.ce.gov.br/" class="text-blue floatRight mt-2">
+                              <div class="lab-inner">
+                                 <div class="lab-thumb">
+                                    <img src="/base/assets/images/logo-transpAlt.png" alt="portal da Transparência">
+                                 </div>
+                                 <div class="lab-content">
+                                    <p>Acessos os dados orçamentos entre outros da prefeitura. </p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="section-wrapper">
+                        <div class="lab-item-2">
+                           <a target="_blank" data-toggle="tooltip" href="https://mapas.fortaleza.ce.gov.br/#/" class="text-blue floatRight mt-2">
+                              <div class="lab-inner">
+                                 <div class="lab-thumb">
+                                    <img src="/base/assets/images/logotipo-fort-mapas.png" alt="Fortaleza em mapas" width="160">
+                                 </div>
+                                 <div class="lab-content">
+                                    <p>Acessos os mapas  outros dados da prefeitura </p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="lab-item-2">
+                           <a target="_blank" data-toggle="tooltip" href="https://mappgeo.sepog.fortaleza.ce.gov.br/" class="text-blue floatRight mt-2">
+                              <div class="lab-inner">
+                                 <div class="lab-thumb">
+                                    <img src="/base/assets/images/logoMappGeo.jpg" alt="Fortaleza em mapas" width="160">
+                                 </div>
+                                 <div class="lab-content">
+                                    <p>
+                                       Ações de Governo Georreferenciadas.
+                                       <span class="invisible">Fortaleza</span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <!--/outros portais-->
+         </div>
+
+         <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+          Tooltip on top
+        </button>
+
+         <!-- Footer -->
+         <footer id="footer">
+            <div class="footer-top style-3 bg-orange">
+               <div class="shap-footer">
+                  <div class="line line-2">
+                     <img src="https://ckan292-citinova-pladinf-dev.apps.fortaleza.ce.gov.br/base/assets/images/data-footer.png" width="250" style="opacity=.7">
+                     <!-- <img src="/base/assets/images/data-footer.png" width="250" style="opacity=.7"> -->
+                  </div>
+               </div>
+               <div class="container">
+                  <div class="d-md-none justify-content-center d-flex">
+                     <a href="https://www.fortaleza.ce.gov.br/" data-toggle="tooltip" target="_blank" class="">
+                        <!-- <img src="/base/assets/images/logo.png" alt="logo prefeitura de fortaleza" class="logoPmf"> -->
+                        <img src="https://dados.fortaleza.ce.gov.br/base/assets/images/logo.png" alt="logo prefeitura de fortaleza" width="190" />
+                     </a>   
+                  </div>
+                  <div class="footer-logos">
+                     <div>
+                        <a href="https://www.fortaleza.ce.gov.br/"  data-toggle="tooltip" target="_blank" class="">
+                           <!-- <img src="/base/assets/images/logo-citinovaBlack.png" class="logoCiti" alt="logo citinova" /> -->
+                           <img src="https://dados.fortaleza.ce.gov.br/base/assets/images/logo-citinovaBlack.png" class="logoCiti" alt="logo citinova" />
+                        </a>
+                     </div>
+                     <div>
+                        <a href="https://ouvidoria.cgm.fortaleza.ce.gov.br/" data-toggle="tooltip" target="_blank" class="">
+                           <!-- <img src="/base/assets/images/logo-cgm.png" alt="logo cgm" class="logoCgm" /> -->
+                           <img src="https://dados.fortaleza.ce.gov.br/base/assets/images/logo-cgm.png" alt="logo cgm" class="logoCgm" />
+                        </a>                        
+                     </div>
+                     <div class="d-md-flex d-none">
+                        <a href="https://www.fortaleza.ce.gov.br/" data-toggle="tooltip" target="_blank" class="">
+                           <!-- <img src="/base/assets/images/logo.png" alt="logo prefeitura de fortaleza" class="logoPmf"> -->
+                           <img src="https://dados.fortaleza.ce.gov.br/base/assets/images/logo.png" alt="logo prefeitura de fortaleza" class="logoPmf" />
+                        </a>   
+                     </div>
+                  </div>
+                  <hr>
+               </div>
+               <div class="footer-links">
+                  <div class="footer-item">
+                     <div class="footer-inner">
+                           <div class="footer-content">
+                              <div class="title">
+                                 <h6 class="font-weight-bold">Principal</h6>
+                              </div>
+                              <div class="content">
+                                 <ul>
+                                       <li><a href="{{ h.url_for('home.index') }}">Início</a></li>
+                                       <li><a href="{{ h.url_for('home.about') }}">Sobre</a></li>
+                                       <li><a href="{{ h.url_for('dataset.search') }}">Conjunto de dados</a></li>
+                                       <li><a href="{{ h.url_for('group.index') }}">Grupos</a></li>
+                                       <li><a href="{{ h.url_for('organization.index') }}">Organizações</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                     </div>
+                  </div>
+                  <div class="footer-item">
+                     <div class="footer-inner">
+                           <div class="footer-content">
+                              <div class="title">
+                                 <h6 class="font-weight-bold">Grupos</h6>
+                              </div>
+                              <div class="content">
+                                 <ul>
+                                       <li><a href="/group/cultura">Cultura</a></li>
+                                       <li><a href="/group/demografia">Demografia</a></li>
+                                       <li><a href="/group/economia">Economia</a></li>
+                                       <li><a href="/group/educacao">Educação</a></li>
+                                       <li><a href="/group/">Ver todos</a></li>
+                                       <!-- <li><a href="/group/planejamentoegestao">Gestão Pública</a></li>
+                                       <li><a href="/group/habitacao">Habitação</a></li>
+                                       <li><a href="/group/meioambiente">Meio ambiente e Urbanismo</a></li>
+                                       <li><a href="/group/saude">Saúde</a></li>
+                                       <li><a href="/group/seguranca">Segurança</a></li>
+                                       <li><a href="/group/transporte">Transporte</a></li>
+                                       <li><a href="/group/turismo">Turismo</a></li> -->
+                                 </ul>
+                              </div>
+                           </div>
+                     </div>
+                  </div>
+                  <div class="footer-item">
+                     <div class="footer-inner">
+                           <div class="footer-content">
+                              <div class="title">
+                                 <h6 class="font-weight-bold">Ajuda</h6>
+                              </div>
+                              <div class="content">
+                                 <ul>
+                                       <li><a href="/faq">Dúvidas frequentes</a></li>
+                                       <li><a href="/contato">Fale conosco</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="d-flex justify-content-center align-itens-center mt-3">
+                  <a target="_blank" data-toggle="tooltip" data-toggle="tooltip" href="https://acessoainformacao.fortaleza.ce.gov.br/sistema/site/index.html?ReturnUrl=%2fsistema%2f">
+                     <!-- <img src="/base/assets/images/ainformacao.png" alt="icone acesso informação" width="55"> -->
+                     <img src="https://dados.fortaleza.ce.gov.br/base/assets/images/ainformacao.png" alt="icone acesso informação" width="55">
+                  </a>
+               </div>
+            </div>
+            <div class="footer-bottom style-3 br">
+               <div class="container">
+                  <div class="section-wrapper">
+                     <ul class="mb-0">
+                        <li class="d-flex justify-content-center">
+                           <div class=" footer-social">
+                              <a target="_blank" href="https://pt-br.facebook.com/FortalezaCitinova/" data-toggle="tooltip">
+                                    <i class="fa fa-facebook  icon-circle bg-facebook text-white" aria-hidden="true" style="width: 35px; text-align:center;"></i>
+                              </a>
+                              <a target="_blank" href="https://www.instagram.com/prefeiturafortalezavoce/" data-toggle="tooltip">
+                                    <i class="fa fa-instagram icon-circle bg-black text-white" aria-hidden="true"></i>
+                              </a>
+                              <a target="_blank" href="https://www.youtube.com/user/prefeiturafortaleza" data-toggle="tooltip">
+                                    <i class="fa fa-youtube   icon-circle bg-youtube text-white" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </li>
+                     </ul> 
+                        <hr>
+                        <p class="text-white">&copy; Fortaleza Digital | CITINOVA - Fundação de Ciência, Tecnologia e Inovação de Fortaleza - Rua dos Tremembés, 02 - Praia de Iracema - Fortaleza-CE
+                        </p>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!--/Footer  -->
+
+         <!-- scrollToTop -->
+         <span class="scrollToTop" style="cursor:pointer">
+            <i class="fa fa-arrow-circle-o-up bg-yellow text-black" aria-hidden="true"></i><span class=""></span>
+            <span class=""></span>
+         </span>
+
+   </body>
+</html>

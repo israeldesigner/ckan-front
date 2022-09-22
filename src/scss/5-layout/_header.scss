@@ -1,0 +1,97 @@
+
+  
+  /***barra app menu acessbilidade ***/
+  .app-acessibilidade .app-acessibilidadeMenu a:hover{
+    color:#FAAF40 !important;
+  }
+  .app-acessibilidade .app-acessibilidadeMenu a i:hover{
+    color:#FAAF40 !important;
+  }
+  .app-acessibilidade .app-acessibilidadeItens  li a:hover{
+    color:#FAAF40 !important;
+  }
+  
+  .app-acessibilidade ul li a, .app-acessibilidade .app-acessibilidadeMenu a{
+    font-size: smaller;
+  }
+
+  /***********/
+  
+  
+  
+  /*** header ****/
+  .header-section{
+    top: 0 !important;
+    background: $yellow !important;
+    z-index:3 !important;
+  }
+  
+  .search-area .search-input form{
+    background-image: none !important;
+  }
+  
+  .rightButtonMenu{
+     border-left: 1px solid #ffffff;
+     padding-left: 10px;
+  }
+  
+  
+  .search-area .search-input form button.search-btn {
+    background: transparent;
+    position: absolute;
+    right: 90px;
+    color: #00A195 !important;
+  }
+  
+  .search-area .search-input form button.search-btn:hover , .rightButtonMenu i:hover{
+    color:$yellow !important;
+    cursor: pointer;
+  }
+  
+  .header-section .header-area.menu-fixed{
+    z-index: 3 !important;
+  }
+  
+  .header-section .logo{
+    display: inline-flex;
+  }
+    
+  .app-acessibilidade .app-acessibilidadeItens ul li{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  
+  .crypto .primary-menu .main-area .main-menu ul li ul{
+    background: #FFF !important;
+    color: #D4d4d4 !important;
+    z-index: 20 !important;
+  }
+  
+  .crypto .primary-menu .main-area .main-menu ul li a:hover{
+    color: $black !important;
+  }
+  .crypto .primary-menu .main-area .main-menu ul li a:hover{
+    opacity: 0.7 !important;
+  }
+  
+  .header-section .primary-menu .main-area .main-menu ul li ul li a:hover{
+    color: $black!important;
+  }
+  .header-section .primary-menu .main-area .main-menu ul li ul li a:hover{
+    opacity: .6;
+  }
+
+  .searchHeader {
+    background: none;
+    border: none;
+    margin-left: 15px;
+    color: $black;
+}
+
+.crypto .header-area.menu-fixed, .mobile-header {
+  background: $yellow !important; }
+
+  .linkPmf-nav, .linkLogo-principal{
+    display: none;
+  }

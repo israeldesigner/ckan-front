@@ -1,0 +1,261 @@
+<!-- pesquisa  -->
+<div class="search-area">
+   <div class="container">
+      <div class="search-input">
+         <div class="search-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+         </div>
+         <form role="search" action="{% url_for controller='dataset', action='search' %}" method="get">
+            <input type="text" name="text" class="form-control" placeholder="Pesquisar dados" name="q" placeholder="{{ _('Search') }}">
+            <button class="search-btn" type="submit">
+            <span class="serch-icon">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+            </button>
+         </form>
+      </div>
+   </div>
+</div>
+<!-- pesquisa  -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+<style>
+   .app-acessibilidade ul li a, .app-acessibilidade .app-acessibilidadeMenu a{
+   font-size: smaller;
+   color: #151b1e;
+   }
+</style>
+<!-- Mobile menu -->
+<div class="mobile-menu crypto-bg ">
+   <nav class="mobile-header d-flex justify-content-between">
+      <div class="header-bar">
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+      <div class="header-logo">
+         <a href="{{ h.url_for('home.index') }}" data-toggle="tooltip" class="linkLogo-principal" title="dados abertos">
+         <img src="/base/assets/images/logo-dadosBgYellow.png" alt="dados abertos" width="170">
+         </a>
+      </div>
+      <div class="search">
+         <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+   </nav>
+   <nav class="mobile-menu">
+      <div class="mobile-menu-area">
+         <div class="mobile-menu-area-inner">
+            <a href="{{ h.url_for('home.index') }}" rel="">
+            <img src="/base/assets/images/logo.png" alt="logo prefeitura de fortaleza" width="130">
+            </a>
+            <ul>
+               <li>
+                  <a class="active" href="{{ h.url_for('home.index') }}">Início</a>
+               </li>
+               <li>
+                  <a href="{{ h.url_for('home.about') }}">Sobre</a>
+               </li>
+               <li>
+                  <a href="{{ h.url_for('dataset.search') }}">Conjunto de dados</a>
+               </li>
+               <li>
+                  <a href="{{ h.url_for('group.index') }}" onclick="window.location='{{ h.url_for('group.index')}}'" data-toggle="tooltip">Grupos</a>
+                  <ul>
+                     {% for group in h.get_featured_groups({count:4}) %}
+                     <li><a href="/dataset/?groups={{ group.name }}">{{ group.display_name }}</a></li>
+                     <li><a href="/group/">Ver todos</a></li>
+                     {% endfor %}
+                  </ul>
+               </li>
+               <li>
+                  <a href="{{ h.url_for('organization.index') }}">Organizações</a>
+               </li>
+               <li>
+                  <a href="#" data-toggle="tooltip">Ajuda</a>
+                  <ul>
+                     <li><a href="/contato">Fale conosco</a></li>
+                     <li><a href="/faq">Dúvidas frequentes</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+</div>
+<!-- Mobile Menu -->
+<section class="app-menu d-none d-lg-block bg-gray-100">
+   <!--acessibilidade-->
+   <section class="s-acessibility">
+      <div class="s-acessibility__utils">
+            <ul class="s-acessibility__utils--anchors">
+               <li><a href="#"  id="anchorMain"   data-toggle="tooltip" data-placement="top" title="atalho alt + 1" data-i18n="[data-original-title]acess.centralAtalho;acess.central" accesskey="1" role="button"></a></li>
+               <li><a href="#search"  id="anchorSearch" data-toggle="tooltip" data-placement="top" title="atalho alt + 3" data-i18n="[data-original-title]acess.menuAtalho;acess.search" accesskey="3" role="button"> </a></li>
+               <li><a href="#"  id="anchorHeader" data-toggle="tooltip" data-placement="top" title="atalho alt + 2" data-i18n="[data-original-title]acess.menuAtalho;acess.menu" accesskey="2" role="button"></a></li>
+               <li><a href="#"  id="anchorFooter" data-toggle="tooltip" data-placement="top" title="atalho alt + 4" data-i18n="[data-original-title]acess.rodapeAtalho;acess.rodape" accesskey="4" role="button"></a></li>
+            </ul>
+            <ul class="s-acessibility__utils--functions">
+               <li>
+                  <a href="#" id="altocontraste" class="" onclick="window.toggleContrast()" role="button">
+                        <i class="fa fa-adjust"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" id="decrease-font"  title="Diminuir Texto" role="button">A-</a>
+               </li>
+               <li>
+                  <a href="#" id="normal-font"  title="Texto tamanho padrão" role="button">A</a>
+               </li>
+               <li>
+                  <a href="#" id="increase-font"  title="Aumentar Texto" role="button">A+</a>
+               </li>
+            </ul>
+            <div class="flex justify-items-end align-items-center langButton">
+            <!-- exemplo tradução -->
+            <button class="lang-button btnPor" type="button">
+                  <img src="/base/assets/images/br.svg" alt="br" class="">
+            </button>
+            <button class="lang-button btnEng" type="button">
+                  <img src="/base/assets/images/gb.svg" alt="ing" class="">
+            </button>
+            <button class="lang-button btnEsp" type="button">
+                  <img src="/base/assets/images/es.svg" alt="es" class="">
+            </button>
+            <!-- exemplo tradução-->
+            </div>          
+      </div>
+      <div class="s-acessibility__links">
+            <ul class="s-acessibility__links--external">
+               <li>
+                  <a href="/" data-toggle="tooltip" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer" data-i18n="acess.info"></a>
+              </li>
+              <li>
+                  <a href="https://transparencia.fortaleza.ce.gov.br/" data-toggle="tooltip" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer" data-i18n="acess.transp"></a>
+              </li>
+              <li>
+                  <a href="https://catalogodeservicos.fortaleza.ce.gov.br/" data-toggle="tooltip" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer" data-i18n="acess.serv"></a>
+              </li>
+              <li>
+                  <a href="http://legislacao.fortaleza.ce.gov.br/index.php/P%C3%A1gina_principal" data-toggle="tooltip" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer" data-i18n="acess.legislacao"></a>
+              </li>
+            </ul>
+      </div>
+   </section>
+   <!--acessibilidade-->
+</section>
+<!-- menu desktop -->
+<header id="header"class="header-section crypto bg-main">
+   <div class="header-area">
+      <div class="container">
+         <div class="primary-menu">
+            <div class="logo align-items-center">
+               <a href="https://www.fortaleza.ce.gov.br/" data-toggle="tooltip" class="linkPmf-nav" target="_blank" title="Prefeitura de Fortaleza">
+                  <img src="/base/assets/images/logo.png" alt="logo prefeitura de fortaleza" width="185">
+               </a>
+               <a href="{{ h.url_for('home.index') }}" data-toggle="tooltip" class="linkLogo-principal" title="dados abertos">
+                  <img src="/base/assets/images/logo-dadosBgYellow.png" alt="dados abertos" width="185">
+               </a>
+            </div>
+            <nav id="navMenu" class="main-area">
+               <div class="main-menu">
+                  <ul>
+                     <li>
+                        <a class="" href="{{ h.url_for('home.index') }}" data-i18n="nav.home"></a>
+                     </li>
+                     <li>
+                        <a href="{{ h.url_for('home.about') }}">{{ _('About') }} </a>
+                     </li>
+                     <li>
+                        <a href="">
+                          {{_('Datasets')}}
+                        </a>
+                        <ul>
+                          <li><a href="{{ h.url_for('dataset.search') }}">Todos</a></li>
+                          <li class="subMenuGrupos">
+                              <a href="#" data-toggle="tooltip">{{_('Groups')}}</a>
+                              <ul>
+                                {% for group in h.get_featured_groups({count:4}) %}
+                                    <li><a href="/dataset/?groups={{ group.name }}">{{ group.display_name }}</a></li>
+                                {% endfor %}
+                                <li>
+                                  <a href="{{ h.url_for('group.index') }}" onclick="window.location='{{ h.url_for('group.index')}}'">
+                                    Todos
+                                  </a>
+                                </li>
+                              </ul>
+                          </li>
+                        </ul>
+                     </li>
+
+                     <li>
+                        <a href="{{ h.url_for('organization.index') }}">{{_('Organizations')}}</a>
+                     </li>
+                     <li>
+                        <a href="#" data-toggle="tooltip" data-i18n="nav.help"></a>
+                        <ul>
+                           <li><a href="/contato" data-i18n="nav.talk"></a></li>
+                           <li><a href="/faq"data-i18n="nav.faq"></a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+               <div style="border-right: 1px solid #000; width: 3px; height: 28px;"></div>
+               <div class="header-right d-flex justify-content-end">
+                  {% if c.userobj %}
+                  <div class="main-menu">
+                     <ul>
+                        <li class="search">
+                           <button class="searchHeader"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </li>
+                        <li>
+                           <a href="{{ h.url_for('user.read', id=c.userobj.name) }}" onclick="window.location='{{ h.url_for('user.read', id=c.userobj.name) }}'" title="{{ _('View profile') }}">{{ h.gravatar((c.userobj.email_hash if c and c.userobj else ''), size=22) }}</a>
+                           <ul>
+                              {% set new_activities = h.new_activities() %}
+                              {% set notifications_tooltip = ngettext('Dashboard (%(num)d new item)', 'Dashboard (%(num)d new items)', new_activities)
+                              %}
+                              <li>
+                                 <a href="{{ h.url_for('dashboard.index') }}" title="{{ notifications_tooltip }}">
+                                 Painel
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="{{ h.url_for('user.edit', id=c.userobj.name) }}" title="{{ _('Edit settings') }}">
+                                 {{ _('Settings') }}
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="{{ h.url_for('user.api_tokens', id=c.userobj.name) }}" title="">
+                                 api_tokens
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="{{ h.url_for('/user/_logout') }}" title="{{ _('Log out') }}">
+                                 {{ _('Log out') }}
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+                  {%else%}
+                  <div class="search mr-3" style="margin-left: 10px;cursor: pointer;">
+                     <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+                  <!--<div style="cursor: pointer;" data-toggle="modal" data-target="#cadastroLogin" >
+                     <i class="icon-user icons font-2xl"></i>
+                     </div>-->
+                  {% endif %}
+               </div>
+            </nav>
+         </div>
+      </div>
+   </div>
+</header>
+<!-- Menu desktop -->
