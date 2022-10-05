@@ -1,0 +1,204 @@
+{% extends "page.html" %}
+{% set homepage_style = ( g.homepage_style or '1' ) %}
+
+{% block subtitle %}{{ _("Welcome") }}{% endblock %}
+
+{% block maintag %}{% endblock %}
+{% block toolbar %}{% endblock %}
+
+{% block content %}
+  <div class="home-custom homepage teste layout-{{ homepage_style }}">
+		<!-- Banner  -->
+        <section class="banner-section style-6 crypto crypto-bg teste2">
+            <!--imagem de fundo-->
+            <!-- <div class="round-one d-none d-lg-block">
+                <a href="./index.html" rel="">
+                    <img src="/base/assets/images/contato-desenho.jpg" alt="logo dados-abertos">
+                </a>
+            </div> -->
+            <!--/imagem de 	-->
+
+          <div class="banner-area">
+            <div class="container">
+              <div class="row no-gutters align-items-center">
+                  <div class="col-lg-6 col-12">
+                    <div class="content-part" id="search">
+                        <div class="section-header style-2">
+                          <a href="./" rel="" class="">
+                            <img src="/base/assets/images/logo-dadosAbertos.png" alt="logo dados-abertos" width="" class="mb-4 img-fluid">
+                          </a>
+                          <!-- <h3 class="text-black" style="font-size: xxx-large;  padding-left:8px">Explore dados</h3> -->
+                          <form action="{% url_for controller='dataset', action='search' %}" method="get" style="font-size: xxx-large;  padding-left:8px">
+                              <input placeholder="Explorar Dados" data-i18n="[placeholder]main.explodeData" aria-describedby="Explorar dados"  type="text"  name="q" />
+                              <button class="btn btn-orange" type="submit">
+                              <i class="icon-magnifier icons text-white d-md-none"></i>
+                              <span class="d-none d-md-block">{{ _('Search') }}</span>
+                              </button>
+                          </form>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <div class="section-wrapper">
+                      <div class="banner-thumb text-right">
+                         <p class="text-black mb-2 lead" data-i18n="[html]content.banner">
+                         </p>
+
+                         <div class="block-infoInitial mt-4">
+                           <a href="{{ h.url_for('dataset.search') }}" title="dataset search">
+                              <div class="cardInit-banner d-flex justify-content-center align-items-center">
+                                <div class="text-black font-weight-bold text-center mr-3">
+                                    <b><i class="fa fa-database mr-2" aria-hidden="true"></i> {{ h.get_site_statistics()['dataset_count'] }}</b><br>
+                                    {{_('Datasets')}}
+                                </div>
+                              </div>
+                            </a>
+                            <a href="{{ h.url_for('group.index') }}" title="group">
+                              <div class="cardInit-banner d-flex justify-content-center align-items-center">
+                                <div class="text-black font-weight-bold text-center">
+                                    <b><i class="fa fa-lightbulb-o" aria-hidden="true"></i> {{ h.get_site_statistics()['group_count'] }}</b><br>
+                                    {{_('Groups')}}
+                                </div>
+                              </div>
+                            </a>
+
+                            <a href="{{ h.url_for('organization.index') }}" title="oraganização">
+                              <div class="cardInit-banner d-flex justify-content-center align-items-center">
+                                <div class="text-black font-weight-bold text-center">
+                                    <b><i class="fa fa-handshake-o" aria-hidden="true"></i> {{ h.get_site_statistics()['organization_count'] }}</b><br>
+                                    {{_('Organizations')}}
+                                </div>
+                              </div>
+                            </a>
+                         </div>
+                      </div>
+                   </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/ Banner  -->
+
+        <section class="s-gruposIcons mt-4 p-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 mb-4 mt-4">
+                <h2 class="text-orange">{{_('Groups')}}</h2>
+              </div>
+            </div>
+             <div class="row" id="iconListas">
+                <div class="col-12" id="msgShow">
+                  <p data-i18n="content.load"></p>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-12 col-lg-3"></div>
+                <div class="col-12 col-lg-9 text-right pr-5">
+                  <small class="mr-3" style="font-style: italic;font-size: x-small;/* margin-right: 20px; */" data-i18n="content.smallMessage"></small>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <!-- dados-->
+        <div class="service-sponsor">
+            <!-- Service Section Style 2 Start Here -->
+            <section class="service-section bg-service style-7 crypto-bg">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="text-orange" data-i18n="content.tableTitle"></h2>
+                    </div>
+                    <div class="section-wrapper" style="margin: 0px !important;">
+                        <div class="container">
+                            <div class="container">
+                                <div class="lab-content tableLastUpdate">
+                                    <table class="table table-responsive-sm table-striped">
+                                      <thead class="">
+                                         <tr>
+                                            <th data-i18n="content.thTitle"></th>
+                                            <th data-i18n="content.thDateModification"></th>
+                                            <th data-i18n="content.thDateOrganization"></th>
+                                            <th data-i18n="content.thDataFormat"></th>
+                                         </tr>
+                                      </thead>
+                                      <tbody id="dataBody" class="dataBody">
+                                      </tbody>
+                                   </table>
+                                </div>
+                                <a href="/dataset?q=" class="btn btn-orange right" data-i18n="content.btnAllDatasets"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Service Section Style 2 Ending Here -->
+        </div>
+        <!--/dados-->
+
+        <!--seção outros portais-->
+        <div class="service-sponsor my-5">
+            <section class="service-section style-7 crypto-bg">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="text-orange" data-i18n="content.portalTitle"></h2>
+                    </div>
+                    <div class="section-wrapper">
+                        <div class="lab-item-2">
+                            <a target="_blank" data-toggle="tooltip" href="https://digital.fortaleza.ce.gov.br/" class="text-blue floatRight mt-2">
+                                <div class="lab-inner">
+                                    <div class="lab-thumb">
+                                        <img src="/base/assets/images/logomarca.jpg" alt="Fortaleza digital">
+                                    </div>
+                                    <div class="lab-content">
+                                        <p data-i18n="content.portalDigital"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="lab-item-2">
+                            <a target="_blank" data-toggle="tooltip" href="https://transparencia.fortaleza.ce.gov.br/" class="text-blue floatRight mt-2">
+                                <div class="lab-inner">
+                                    <div class="lab-thumb">
+                                        <img src="/base/assets/images/logo-transpAlt.png" alt="portal da Transparência">
+                                    </div>
+                                    <div class="lab-content">
+                                        <p data-i18n="content.portalTransparencia"> </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section-wrapper">
+                        <div class="lab-item-2">
+                            <a target="_blank" data-toggle="tooltip" href="https://mapas.fortaleza.ce.gov.br/#/" class="text-blue floatRight mt-2">
+                                <div class="lab-inner">
+                                    <div class="lab-thumb">
+                                        <img src="/base/assets/images/logotipo-fort-mapas.png" alt="Fortaleza em mapas" width="160">
+                                    </div>
+                                    <div class="lab-content">
+                                        <p data-i18n="content.portalFortalMapas"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="lab-item-2">
+                            <a target="_blank" data-toggle="tooltip" href="https://mappgeo.sepog.fortaleza.ce.gov.br/" class="text-blue floatRight mt-2">
+                                <div class="lab-inner">
+                                    <div class="lab-thumb">
+                                        <img src="/base/assets/images/logoMappGeo.jpg" alt="Fortaleza em mapas" width="160">
+                                    </div>
+                                    <div class="lab-content">
+                                        <p data-i18n="[html]content.portalMappGeo">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--/outros portais-->
+  </div>
+{% endblock %}

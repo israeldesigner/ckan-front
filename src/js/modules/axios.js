@@ -1,5 +1,17 @@
 import axios from '../../../node_modules/axios/dist/axios';
 
+let locationTotal = location.href;
+let urlExtense = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+let base_url = window.location.origin;
+let host = window.location.host;
+let pathArray = window.location.pathname.split( '/' );
+let urlSpara = window.location.href.split('?')[0];
+console.log(pathArray);
+console.log(host);
+console.log(base_url);
+console.log(urlExtense);
+console.log(locationTotal);
+
 
 axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*';
 delete axios.defaults.headers.common["X-Requested-With"];
@@ -25,7 +37,7 @@ axios.interceptors.response.use(function(response) {
 });
 
 
-const locationStrong = location.href;
+const locationStrong = `${base_url}`;
 const baseUrl = `${locationStrong}/api/3/action/`;
 const urlDataSet = `${locationStrong}/dataset/`;
 
@@ -69,7 +81,7 @@ const appendIconDOM = (icons) => {
             <a href="/dataset/?groups=${icon.name}">
               <!--<i class="demo-icon ${icon.name}icon-fol fa-3x icon-circle bg-yellow text-black mb-2 "></i>-->
               <img src="${icon.image_display_url}" alt="${icon.name}"  width="80" />
-              <p>${icon.title}</p>
+              <p class="icon${icon.name}">${icon.title}</p>
               <b>${icon.package_count}</b>
             </a>
           </div>

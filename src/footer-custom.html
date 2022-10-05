@@ -12,7 +12,7 @@
                      <a href="https://www.fortaleza.ce.gov.br/" data-toggle="tooltip" target="_blank" class="">
                         <img src="/base/assets/images/logo.png" alt="logo prefeitura de fortaleza" class="logoPmf">
                         <!-- <img src="https://dados.fortaleza.ce.gov.br/base/assets/images/logo.png" alt="logo prefeitura de fortaleza" width="190" /> -->
-                     </a>   
+                     </a>
                   </div>
                   <div class="footer-logos">
                      <div>
@@ -25,13 +25,13 @@
                         <a href="https://ouvidoria.cgm.fortaleza.ce.gov.br/" data-toggle="tooltip" target="_blank" class="">
                            <img src="/base/assets/images/logo-cgm.png" alt="logo cgm" class="logoCgm" />
                            <!-- <img src="https://dados.fortaleza.ce.gov.br/base/assets/images/logo-cgm.png" alt="logo cgm" class="logoCgm" /> -->
-                        </a>                        
+                        </a>
                      </div>
                      <div class="d-md-flex d-none">
                         <a href="https://www.fortaleza.ce.gov.br/" data-toggle="tooltip" target="_blank" class="">
                            <img src="/base/assets/images/logo.png" alt="logo prefeitura de fortaleza" class="logoPmf">
                            <!-- <img src="https://dados.fortaleza.ce.gov.br/base/assets/images/logo.png" alt="logo prefeitura de fortaleza" class="logoPmf" /> -->
-                        </a>   
+                        </a>
                      </div>
                   </div>
                   <hr>
@@ -45,11 +45,11 @@
                               </div>
                               <div class="content">
                                  <ul>
-                                       <li><a href="{{ h.url_for('home.index') }}">Início</a></li>
-                                       <li><a href="{{ h.url_for('home.about') }}">Sobre</a></li>
-                                       <li><a href="{{ h.url_for('dataset.search') }}">Conjunto de dados</a></li>
-                                       <li><a href="{{ h.url_for('group.index') }}">Grupos</a></li>
-                                       <li><a href="{{ h.url_for('organization.index') }}">Organizações</a></li>
+                                       <li><a href="{{ h.url_for('home.index') }}" data-i18n="nav.home"></a></li>
+                                       <li><a href="{{ h.url_for('home.about') }}">{{ _('About') }}</a></li>
+                                       <li><a href="{{ h.url_for('dataset.search') }}">{{_('Datasets')}}</a></li>
+                                       <li><a href="{{ h.url_for('group.index') }}">{{_('Groups')}}</a></li>
+                                       <li><a href="{{ h.url_for('organization.index') }}">{{_('Organizations')}}</a></li>
                                  </ul>
                               </div>
                            </div>
@@ -59,15 +59,15 @@
                      <div class="footer-inner">
                            <div class="footer-content">
                               <div class="title">
-                                 <h6 class="font-weight-bold">Grupos</h6>
+                                 <h6 class="font-weight-bold">{{_('Groups')}}</h6>
                               </div>
                               <div class="content">
                                  <ul>
-                                       <li><a href="/group/cultura">Cultura</a></li>
-                                       <li><a href="/group/demografia">Demografia</a></li>
-                                       <li><a href="/group/economia">Economia</a></li>
-                                       <li><a href="/group/educacao">Educação</a></li>
-                                       <li><a href="/group/">Ver todos</a></li>
+                                       <li><a href="/group/cultura" data-i18n="group.culture"></a></li>
+                                       <li><a href="/group/demografia" data-i18n="group.demography"></a></li>
+                                       <li><a href="/group/economia" data-i18n="group.economy"></a></li>
+                                       <li><a href="/group/educacao" data-i18n="group.education"></a></li>
+                                       <li><a href="/group/" data-i18n="group.seeAll"></a></li>
                                        <!-- <li><a href="/group/planejamentoegestao">Gestão Pública</a></li>
                                        <li><a href="/group/habitacao">Habitação</a></li>
                                        <li><a href="/group/meioambiente">Meio ambiente e Urbanismo</a></li>
@@ -84,12 +84,12 @@
                      <div class="footer-inner">
                            <div class="footer-content">
                               <div class="title">
-                                 <h6 class="font-weight-bold">Ajuda</h6>
+                                 <h6 class="font-weight-bold" data-toggle="tooltip" data-i18n="nav.help"></h6>
                               </div>
                               <div class="content">
                                  <ul>
-                                       <li><a href="/faq">Dúvidas frequentes</a></li>
-                                       <li><a href="/contato">Fale conosco</a></li>
+                                    <li><a href="/contato" data-i18n="nav.talk"></a></li>
+                                    <li><a href="/faq"data-i18n="nav.faq"></a></li>
                                  </ul>
                               </div>
                            </div>
@@ -120,7 +120,7 @@
                               </a>
                            </div>
                         </li>
-                     </ul> 
+                     </ul>
                         <hr>
                         <p class="text-white">&copy; Fortaleza Digital | CITINOVA - Fundação de Ciência, Tecnologia e Inovação de Fortaleza - Rua dos Tremembés, 02 - Praia de Iracema - Fortaleza-CE
                         </p>

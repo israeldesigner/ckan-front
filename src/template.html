@@ -322,7 +322,7 @@
                                     <input placeholder="Explorar Dados" type="text"  name="q" />
                                     <button class="btn btn-orange" type="submit">
                                     <i class="icon-magnifier icons text-white d-md-none"></i>
-                                    <span class="d-none d-md-block">Pesquisar</span>
+                                    <span class="d-none d-md-block" data-i18n="content.s">Pesquisar</span>
                                     </button>
                                  </form>
                               </div>
@@ -331,7 +331,7 @@
                         <div class="col-lg-6 col-12">
                            <div class="section-wrapper">
                               <div class="banner-thumb text-right">
-                                 <p class="text-black mb-2 lead" data-i18n="[html]about.description"></p>
+                                 <p class="text-black mb-2 lead" data-i18n="[html]content.banner"></p>
                                  <div class="block-infoInitial mt-4">
                                     <a href="/dataset/" title="dataset search">
                                        <div class="cardInit-banner d-flex justify-content-center align-items-center">
@@ -375,118 +375,119 @@
                 </div>
                  <div class="row" id="iconListas">
                     <div class="col-12" id="msgShow">
-                      <p>Carregando...</p>
+                      <p data-i18n="content.load"></p>
                     </div>
                  </div>
                  <div class="row">
                     <div class="col-12 col-lg-3"></div>
                     <div class="col-12 col-lg-9 text-right pr-5">
-                      <small class="mr-3" style="font-style: italic;font-size: x-small;/* margin-right: 20px; */">*O total de conjunto de dados pode não se igualar à soma dos totais de conjuntos de dados por grupo pois um conjunto de dados pode estar em mais de um grupo.</small>
+                      <small class="mr-3" style="font-style: italic;font-size: x-small;/* margin-right: 20px; */" 
+                      data-i18n="content.smallMessage">
+                      </small>
                     </div>
                   </div>
               </div>
             </section>
-            <!-- dados-->
-            <div class="service-sponsor">
-              <!-- Service Section Style 2 Start Here -->
-              <section class="service-section bg-service style-7 crypto-bg">
-                  <div class="container">
-                      <div class="section-header">
-                          <h2 class="text-orange">Últimas atualizações</h2>
-                      </div>
-                      <div class="section-wrapper" style="margin: 0px !important;">
-                          <div class="container">
-                              <div class="container">
-                                  <div class="lab-content tableLastUpdate">
-                                      <table class="table table-responsive-sm table-striped">
-                                        <thead class="">
-                                          <tr>
-                                              <th>Título</th>
-                                              <th>Data da modificação</th>
-                                              <th>Organização</th>
-                                              <th>Formatos dados </th>
-                                          </tr>
-                                        </thead>
-                                        <tbody id="dataBody" class="dataBody">
-                                        </tbody>
-                                    </table>
-                                  </div>
-                                  <a href="/dataset?q=" class="btn btn-orange right">Consultar todos</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </section>
-              <!-- Service Section Style 2 Ending Here -->
-            </div>
-            <!--/dados-->
             
-            <!--seção outros portais-->
-            <div class="service-sponsor my-5">
-               <section class="service-section style-7 crypto-bg">
-                  <div class="container">
-                     <div class="section-header">
-                        <h2 class="text-orange">Outros portais de dados</h2>
+        <!-- dados-->
+         <div class="service-sponsor">
+         <!-- Service Section Style 2 Start Here -->
+         <section class="service-section bg-service style-7 crypto-bg">
+             <div class="container">
+                 <div class="section-header">
+                     <h2 class="text-orange" data-i18n="content.tableTitle"></h2>
+                 </div>
+                 <div class="section-wrapper" style="margin: 0px !important;">
+                     <div class="container">
+                         <div class="container">
+                             <div class="lab-content tableLastUpdate">
+                                 <table class="table table-responsive-sm table-striped">
+                                   <thead class="">
+                                      <tr>
+                                         <th data-i18n="content.thTitle"></th>
+                                         <th data-i18n="content.thDateModification"></th>
+                                         <th data-i18n="content.thDateOrganization"></th>
+                                         <th data-i18n="content.thDataFormat"></th>
+                                      </tr>
+                                   </thead>
+                                   <tbody id="dataBody" class="dataBody">
+                                   </tbody>
+                                </table>
+                             </div>
+                             <a href="/dataset?q=" class="btn btn-orange right" data-i18n="content.btnAllDatasets"></a>
+                         </div>
                      </div>
-                     <div class="section-wrapper">
+                 </div>
+             </div>
+         </section>
+         <!-- Service Section Style 2 Ending Here -->
+         </div>
+         <!--/dados-->
+            
+        <!--seção outros portais-->
+         <div class="service-sponsor my-5">
+            <section class="service-section style-7 crypto-bg">
+               <div class="container">
+                  <div class="section-header">
+                        <h2 class="text-orange" data-i18n="content.portalTitle"></h2>
+                  </div>
+                  <div class="section-wrapper">
                         <div class="lab-item-2">
                            <a target="_blank" data-toggle="tooltip" href="https://digital.fortaleza.ce.gov.br/" class="text-blue floatRight mt-2">
                               <div class="lab-inner">
-                                 <div class="lab-thumb">
-                                    <img src="/base/assets/images/logomarca.jpg" alt="Fortaleza digital">
-                                 </div>
-                                 <div class="lab-content">
-                                    <p>Portal de serviços digitais da Prefeitura de Fortaleza.</p>
-                                 </div>
+                                    <div class="lab-thumb">
+                                       <img src="/base/assets/images/logomarca.jpg" alt="Fortaleza digital">
+                                    </div>
+                                    <div class="lab-content">
+                                       <p data-i18n="content.portalDigital"></p>
+                                    </div>
                               </div>
                            </a>
                         </div>
                         <div class="lab-item-2">
                            <a target="_blank" data-toggle="tooltip" href="https://transparencia.fortaleza.ce.gov.br/" class="text-blue floatRight mt-2">
                               <div class="lab-inner">
-                                 <div class="lab-thumb">
-                                    <img src="/base/assets/images/logo-transpAlt.png" alt="portal da Transparência">
-                                 </div>
-                                 <div class="lab-content">
-                                    <p>Acessos os dados orçamentos entre outros da prefeitura. </p>
-                                 </div>
+                                    <div class="lab-thumb">
+                                       <img src="/base/assets/images/logo-transpAlt.png" alt="portal da Transparência">
+                                    </div>
+                                    <div class="lab-content">
+                                       <p data-i18n="content.portalTransparencia"> </p>
+                                    </div>
                               </div>
                            </a>
                         </div>
-                     </div>
-                     <div class="section-wrapper">
+                  </div>
+                  <div class="section-wrapper">
                         <div class="lab-item-2">
                            <a target="_blank" data-toggle="tooltip" href="https://mapas.fortaleza.ce.gov.br/#/" class="text-blue floatRight mt-2">
                               <div class="lab-inner">
-                                 <div class="lab-thumb">
-                                    <img src="/base/assets/images/logotipo-fort-mapas.png" alt="Fortaleza em mapas" width="160">
-                                 </div>
-                                 <div class="lab-content">
-                                    <p>Acessos os mapas  outros dados da prefeitura </p>
-                                 </div>
+                                    <div class="lab-thumb">
+                                       <img src="/base/assets/images/logotipo-fort-mapas.png" alt="Fortaleza em mapas" width="160">
+                                    </div>
+                                    <div class="lab-content">
+                                       <p data-i18n="content.portalFortalMapas"></p>
+                                    </div>
                               </div>
                            </a>
                         </div>
                         <div class="lab-item-2">
                            <a target="_blank" data-toggle="tooltip" href="https://mappgeo.sepog.fortaleza.ce.gov.br/" class="text-blue floatRight mt-2">
                               <div class="lab-inner">
-                                 <div class="lab-thumb">
-                                    <img src="/base/assets/images/logoMappGeo.jpg" alt="Fortaleza em mapas" width="160">
-                                 </div>
-                                 <div class="lab-content">
-                                    <p>
-                                       Ações de Governo Georreferenciadas.
-                                       <span class="invisible">Fortaleza</span>
-                                    </p>
-                                 </div>
+                                    <div class="lab-thumb">
+                                       <img src="/base/assets/images/logoMappGeo.jpg" alt="Fortaleza em mapas" width="160">
+                                    </div>
+                                    <div class="lab-content">
+                                       <p data-i18n="[html]content.portalMappGeo">
+                                       </p>
+                                    </div>
                               </div>
                            </a>
                         </div>
-                     </div>
                   </div>
-               </section>
-            </div>
-            <!--/outros portais-->
+               </div>
+            </section>
+         </div>
+         <!--/outros portais-->
          </div>
 
          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">

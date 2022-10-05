@@ -26,7 +26,7 @@ module.exports = {
           ecma: undefined,
           parse: {},
           compress: {
-            drop_console: true
+            drop_console: false
           },
           format: {
             comments: false,

@@ -1,0 +1,44 @@
+{% trans %}
+<!-- seção main-->
+<main>
+    <section class="contact-us pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="/base/assets/images/contato-desenho.jpg" alt="desenho arte contato" class="img-thumbnail">
+                    <div class="service-social">
+                        <h3 class="mb-3 mt-3" data-i18n="main.shareLink"></h3>
+                        <div class="d-flex justify-content-between">
+                            <a target="_blank" data-toggle="tooltip" href="https://pt-br.facebook.com/FortalezaCitinova/">
+                              <i class="fa fa-facebook  icon-circle bg-blue-darken" aria-hidden="true"></i>
+                            </a>
+                            <a target="_blank" data-toggle="tooltip" href="https://www.instagram.com/prefeiturafortalezavoce/">
+                              <i class="fa fa-instagram icon-circle bg-black" aria-hidden="true"></i>
+                            </a>
+                            <a target="_blank" data-toggle="tooltip" href="https://www.youtube.com/user/prefeiturafortaleza">
+                              <i class="fa fa-youtube   icon-circle bg-danger" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-6">
+                    <form class="contact-form" action="/" method="post">
+                        <label for="Nome" data-i18n="main.name"></label>
+                        <input type="text" name="name" placeholder="Nome" id="nome"class="form-control mb-3">
+                        <label for="email" data-i18n="main.email">Email</label>
+                        <input type="email" name="email" placeholder="email" id="email" class="form-control mb-3">
+                        <label for="assunto" data-i18n="main.subject">Assunto</label>
+                        <input type="text" name="text" placeholder="Assunto" id="assunto"class="form-control mb-3">
+                        <label for="assunto" data-i18n="main.message">Mensagem</label>
+                        <textarea rows="5" class="form-control mb-3" id="textMensagem" placeholder="Sua mensagem"></textarea>
+                        <button type="submit" name="submit" class="btn btn-orange floatRight" data-i18n="main.sendMessage"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Contact -->
+{% endtrans %}
+
