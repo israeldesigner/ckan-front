@@ -1,20 +1,3 @@
-
-  
-  /***barra app menu acessbilidade ***/
-  .app-acessibilidade .app-acessibilidadeMenu a:hover{
-    color:#FAAF40 !important;
-  }
-  .app-acessibilidade .app-acessibilidadeMenu a i:hover{
-    color:#FAAF40 !important;
-  }
-  .app-acessibilidade .app-acessibilidadeItens  li a:hover{
-    color:#FAAF40 !important;
-  }
-  
-  .app-acessibilidade ul li a, .app-acessibilidade .app-acessibilidadeMenu a{
-    font-size: smaller;
-  }
-
   /***********/
   
   
@@ -55,12 +38,6 @@
   .header-section .logo{
     display: inline-flex;
   }
-    
-  .app-acessibilidade .app-acessibilidadeItens ul li{
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  
   
   .crypto .primary-menu .main-area .main-menu ul li ul{
     background: #FFF !important;
