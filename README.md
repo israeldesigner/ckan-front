@@ -1,8 +1,4 @@
-# 📦 webpack Boilerplate
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
-Sensible webpack 5 boilerplate using Babel, PostCSS and Sass.
+# 📦 webpack Boilerplate.
 
 ## Installation
 
@@ -20,7 +16,7 @@ npm i
 npm start
 ```
 
-You can view the development server at `localhost:8080`.
+You can view the development server at `localhost:******`.
 
 ### Production build
 
@@ -87,10 +83,6 @@ cd dist && http-server
 - [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) - Implement prettier rules
   - - [`prettier`](https://github.com/prettier/prettier) - Dependency for `prettier-webpack-plugin` plugin
 - [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack) - Throw exceptions for import/export in webpack
-
-## Author
-
-- [Tania Rascia](https://www.taniarascia.com)
 
 ## License
 
